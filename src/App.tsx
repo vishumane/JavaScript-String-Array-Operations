@@ -207,6 +207,16 @@ function App() {
   ); // Sums up all elements
   console.log(reduced, 'value');
 
+  //sort method 
+
+  let sorted = array1.slice().sort(); // Sorts the array
+  let customSorted = array1.slice().sort((a, b) => a - b); // Sorts numerically
+  console.log(sorted, customSorted);
+
+// length of array 
+  let isEmpty = array1.length === 0; // Checks if the array is empty
+  let isArray = Array.isArray(array1); // Checks if it's an array
+  console.log(isEmpty,isArray);
   return (
     <>
       <h1>React JS</h1>
